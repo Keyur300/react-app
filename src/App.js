@@ -11,7 +11,6 @@ function App() {
   const status = useSelector(getProductStatus)
   const dispatch = useDispatch()
   console.log(status, "====status");
-  console.log(products, "===products");
   
   useEffect(() => {
     dispatch(getProductAsycData(10))
